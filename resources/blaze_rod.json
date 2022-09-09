@@ -1,0 +1,20 @@
+{
+  "shaped": [
+    {
+      "block": "crafting_table",
+      "input": {
+        "b": {
+          "id": 377
+        }
+      },
+      "output": [
+        {
+          "id": 369
+        }
+      ],
+      "shape": [
+        "bb"
+      ]
+    }
+  ]
+}

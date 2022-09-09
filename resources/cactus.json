@@ -1,0 +1,26 @@
+{
+  "shaped": [
+    {
+      "block": "crafting_table",
+      "input": {
+        "g": {
+          "id": 351,
+          "damage": 8
+        },
+        "s": {
+          "id": 280
+        }
+      },
+      "output": [
+        {
+          "id": 81
+        }
+      ],
+      "shape": [
+        "sss",
+        "sgs",
+        "sss"
+      ]
+    }
+  ]
+}

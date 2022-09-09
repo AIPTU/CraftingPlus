@@ -1,0 +1,13 @@
+{
+  "smelting": [
+    {
+      "block": "blast_furnace",
+      "input": {
+        "id": 1
+      },
+      "output": {
+        "id": 438
+      }
+    }
+  ]
+}

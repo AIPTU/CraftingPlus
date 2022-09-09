@@ -1,0 +1,29 @@
+{
+  "shaped": [
+    {
+      "block": "crafting_table",
+      "input": {
+        "b": {
+          "id": 352
+        },
+        "m": {
+          "id": 110
+        },
+        "d": {
+          "id": 351,
+          "damage": 17
+        }
+      },
+      "output": [
+        {
+          "id": 39
+        }
+      ],
+      "shape": [
+        " d ",
+        "bbb",
+        "mmm"
+      ]
+    }
+  ]
+}

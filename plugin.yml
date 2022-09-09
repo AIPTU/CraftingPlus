@@ -1,0 +1,5 @@
+name: CraftingPlus
+main: aiptu\craftingplus\CraftingPlus
+version: 1.0.0
+api: 4.8.0
+author: AIPTU
