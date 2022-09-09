@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/AIPTU/CraftingPlus
+branches:
+- master
+projects:
+  CraftingPlus:
+    path: ""
+    icon: "icon.png"
+...
