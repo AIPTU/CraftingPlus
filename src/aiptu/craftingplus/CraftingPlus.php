@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright (c) 2022 AIPTU
+ * Copyright (c) 2022-2023 AIPTU
  *
  * For the full copyright and license information, please view
  * the LICENSE.md file that was distributed with this source code.
@@ -24,8 +24,8 @@ use pocketmine\item\Item;
 use pocketmine\item\ItemFactory;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\AssumptionFailedError;
-use pocketmine\utils\TextFormat;
 use pocketmine\utils\Filesystem;
+use pocketmine\utils\TextFormat;
 use Symfony\Component\Filesystem\Path;
 use function array_map;
 use function is_array;
@@ -45,7 +45,7 @@ final class CraftingPlus extends PluginBase
 
 	private function registerRecipe(string $filePath): void
 	{
-		$recipes = json_decode(Filesystem::fileGetContents(Path::join($this->getDataFolder(), $filePath), 'Missing required resource file'), true);
+		$recipes = json_decode(Filesystem::fileGetContents(Path::join($this->getDataFolder(), $filePath)), true);
 		if (!is_array($recipes)) {
 			throw new AssumptionFailedError($filePath . ' root should contain a map of recipe types');
 		}
