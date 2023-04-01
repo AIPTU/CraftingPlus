@@ -25,10 +25,9 @@ use pocketmine\item\ItemFactory;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\AssumptionFailedError;
 use pocketmine\utils\TextFormat;
-use pocketmine\utils\Utils;
+use pocketmine\utils\Filesystem;
 use Webmozart\PathUtil\Path;
 use function array_map;
-use function file_get_contents;
 use function is_array;
 use function json_decode;
 use function trim;
@@ -46,7 +45,7 @@ final class CraftingPlus extends PluginBase
 
 	private function registerRecipe(string $filePath): void
 	{
-		$recipes = json_decode(Utils::assumeNotFalse(file_get_contents(Path::join($this->getDataFolder(), $filePath)), 'Missing required resource file'), true);
+		$recipes = json_decode(Filesystem::fileGetContents(Path::join($this->getDataFolder(), $filePath), 'Missing required resource file'), true);
 		if (!is_array($recipes)) {
 			throw new AssumptionFailedError($filePath . ' root should contain a map of recipe types');
 		}
